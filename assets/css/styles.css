@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* when you press any directory buttons, page will scroll */
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(240, 234, 234);
+}
+
+/* Navbar styling */
+header {
+    padding: 20px 35px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color:white;
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+/* navbar styling end */
+
+.centerpiece img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* section styling start */
+.section {
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    font-size: 24px;
+    width: 20%;
+    padding-right: 100px;
+    padding-left: 50px;
+    margin-top: 50px;
+    border-right: solid 1px black;
+    text-align: right;
+
+}
+
+.section-content {
+    font-size: 18px;
+    width: 70%;
+    padding: 100px;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+/* section styling end */
+
+/* work section styling */
+.project {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.project img{
+    border: solid black 5px;
+    width: 400px;
+    height: 400px;
+}
+
+.first-project img{
+    width: 800px;
+}
+
+.project h3 {
+    background-color: grey;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/*work section styling end */
+
+/* MEDIA QUERY for small desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    .section {
+        justify-content: center;
+    }
+    .section-title {
+        font-size: 24px;
+        width: 50%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-top: 20px;
+        border-right: 0;
+        border-bottom: solid 1px black;
+        text-align: center;
+    }
+    .section-content {
+        padding: 30px;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .project img {
+        width: 300px;
+        height: 300px;
+    }
+    .first-project img{
+        width: 600px;
+
+    }
+}
+
+/* MEDIA QUERY for tablets and smaller */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+        align-self: center;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    }
+    .project img {
+        width: 200px;
+        height: 200px;
+    }
+    .first-project img{
+        width: 400px;
+
+    }
+}
+
+/* MEDIA QUERY for mobile phones and smaller */
+@media screen and (max-width: 575px){
+    header {
+        justify-content: space-between;
+        display: inline-flexbox;
+        padding: 5px;
+        align-items: flex-start
+    }
+    header h1{
+        font-size: 12px;
+        justify-self: left;
+    }    
+    header nav ul li a {
+        margin: 0px;
+        padding: 5px;
+        font-weight: lighter;
+        font-size: 8px;
+    }
+    .section-title {
+        font-size: 12px;
+    }
+    .section-content {
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .project img {
+        width: 100px;
+        height: 100px;
+    }
+    .first-project img{
+        width: 200px;
+        height: 100px;
+
+    }
+    .project h3 {
+        background-color: grey;
+        position: absolute;
+        font-size: 10px;
+        bottom: 8px;
+        right: 8px;
+    }
+    .contact-me ul li{
+        font-size: 12px;
+    }
+
+}
