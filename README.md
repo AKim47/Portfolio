@@ -5,7 +5,7 @@ This is my portfolio where I will keep information about me, links to my other w
 
 ## Image Mockup
 
-![Portfolio Mockup](./assets/images/website.jpg)
+![Portfolio Mockup](./assets/images/website.JPG)
 
 ## Link to Site
 [Portfolio Site Link](https://akim47.github.io/Portfolio/)
